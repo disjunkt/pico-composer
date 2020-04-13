@@ -15,13 +15,8 @@
 		<a id="mobilenav-close" href="#" title="Navigation">Navigation schlie&szlig;en</a>
 		<ul>
       {% for page in pages(depthOffset=-1) %}
-    <li{% if page.url == current_page.url %} aria-current="page"{% endif %}><a href="{{ page.url }}">{{ page.title }}</a></li>
+      <li{{ page.url == current_page.url ? ' aria-current="page"' }}><a href="{{ page.url }}">{{ page.title }}</a></li>
       {% endfor %}
-      <!--
-      <li aria-current="page"><a href="#">Home</a></li>
-			<li><a href="#">Link</a></li>
-			<li><a href="https://typotest.paulpackmor.de/impressum/">Impressum</a></li>
-      -->
 		</ul>
 	</nav>
 	<main>
