@@ -367,7 +367,7 @@ footer figure img.pagelogo {
 
 	/* Nav wird schmaler und passt so in die zweite Spalte. */
 	nav {
-		grid-column: 2 / span 1;
+		grid-column: 1 / span 1;
 	}
 
 	/* Navigationsbutton fuer mobile Geraete ausblenden. */
