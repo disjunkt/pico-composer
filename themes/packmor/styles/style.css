@@ -361,14 +361,18 @@ footer figure img.pagelogo {
 	}
 
 	/* Header macht Platz fuer die Navigation. */
+	/*
 	header {
 		grid-column: 1 / span 1;
 	}
+	*/
 
 	/* Nav wird schmaler und passt so in die zweite Spalte. */
+	/*
 	nav {
 		grid-column: 2 / span 1;
 	}
+	*/
 
 	/* Navigationsbutton fuer mobile Geraete ausblenden. */
 	nav #mobilenav,
@@ -403,18 +407,20 @@ footer figure img.pagelogo {
 	}
 }
 
-@media (min-width: 40em) {
+@media (min-width: 60em) {
+	/* Navigation geht in die linke Spalte und macht Platz für den Hauptteil main */
 	nav {
 		grid-column: 1 / span 1;
-	}
-
-	main {
-		grid-column: 2 /span 1;
 	}
 
 	nav #mobilenav ~ ul,
 	nav #mobilenav:target ~ ul {
 		height: auto;
+	}
+
+	/* Der Hauptteil main geht in die zweite Spalte */
+	main {
+		grid-column: 2 /span 1;
 	}
 }
 
