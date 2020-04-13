@@ -14,7 +14,7 @@
 		<a id="mobilenav" href="#mobilenav" title="Navigation">Navigation</a>
 		<a id="mobilenav-close" href="#" title="Navigation">Navigation schlie&szlig;en</a>
 		<ul>
-      {% for page in pages() %}
+      {% for page in pages(depthOffset=-1) %}
         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
       {% endfor %}
       <!--
