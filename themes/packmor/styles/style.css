@@ -86,7 +86,7 @@ html {
 
 body {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: min-content auto;
 	position: relative;
 	/*Seiteninhalt zentrieren*/
 	margin: 0 auto;
