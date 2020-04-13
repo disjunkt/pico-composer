@@ -14,9 +14,14 @@
 		<a id="mobilenav" href="#mobilenav" title="Navigation">Navigation</a>
 		<a id="mobilenav-close" href="#" title="Navigation">Navigation schlie&szlig;en</a>
 		<ul>
-			<li aria-current="page"><a href="#">Home</a></li>
+      {% for page in pages() %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+      <!--
+      <li aria-current="page"><a href="#">Home</a></li>
 			<li><a href="#">Link</a></li>
 			<li><a href="https://typotest.paulpackmor.de/impressum/">Impressum</a></li>
+      -->
 		</ul>
 	</nav>
 	<main>
