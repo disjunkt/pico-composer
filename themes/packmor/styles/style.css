@@ -402,7 +402,7 @@ footer figure img.pagelogo {
 		background-color: transparent;
 	}
 }
-
+/*
 @media (min-width: 30em) {
 	nav {
 		grid-column: 1 / spread 1;
@@ -417,7 +417,7 @@ footer figure img.pagelogo {
 		height: auto;
 	}
 }
-
+*/
 /*===================================
 ### DISPLAYGROESSE ANPASSEN END   ###
 ===================================*/
