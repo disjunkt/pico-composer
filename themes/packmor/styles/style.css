@@ -401,6 +401,10 @@ footer figure img.pagelogo {
 		border-radius: 1em;
 		background-color: transparent;
 	}
+
+	main {
+		grid-column: 2 / span 1;
+	}
 }
 
 /*===================================
