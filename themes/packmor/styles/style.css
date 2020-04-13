@@ -322,7 +322,6 @@ main article {
 }
 
 main article:first-child {
-	margin-top: 2em;
 	background-image: none;
 }
 
