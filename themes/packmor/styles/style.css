@@ -384,6 +384,8 @@ footer figure img.pagelogo {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
 		border: none;
+		/*Zweispaltig: height: auto; - Einspaltig: height: inherit;*/
+		height: auto;
 	}
 
 	nav li {
