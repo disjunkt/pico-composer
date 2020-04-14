@@ -261,8 +261,8 @@ main h1 {
 	line-height: 2.34em;
 }
 
-main h1:first-child {
-	margin-top: 0.5em;
+main article > *:first-child {
+	margin-top: 0;
 }
 
 main h2 {
@@ -321,6 +321,7 @@ main article {
 	background-position: 0 0;
 }
 
+/* Keine Linie über dem ersten Artikel */
 main article:first-child {
 	background-image: none;
 }
@@ -412,8 +413,11 @@ footer figure img.pagelogo {
 	/* Navigation geht in die linke Spalte und macht Platz für den Hauptteil main */
 	nav {
 		grid-column: 1 / span 1;
+		padding-top: 1rem;
 	}
 
+	/* Navigationselemente sollen sich nicht gleichmäßig Über die gesamte Höhe
+	verteilen, sondern oben ausgerichtet sein. */
 	nav #mobilenav ~ ul,
 	nav #mobilenav:target ~ ul {
 		height: auto;
