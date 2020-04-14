@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+	<link rel="stylesheet" href="{{ theme_url }}/styles/style.css">
+  </head>
+  <body>
+	<header>
+		<figure><img id="pagelogo" src="{{ assets_url }}/img/packmor-logo.png" alt="Packmor.org-Logo"></figure>
+	</header>
+	<nav>
+		<a id="mobilenav" href="#mobilenav" title="Navigation">Navigation</a>
+		<a id="mobilenav-close" href="#" title="Navigation">Navigation schlie&szlig;en</a>
+		<ul>
+      {% for page in pages(depthOffset=-1) %}
+      <li{{ page.url == current_page.url ? ' aria-current="page"' }}><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+		</ul>
+	</nav>
+	<main>
+		<section>
+      <article>
+        {{ content }}
+        <!--
+  			<figure>
+  				<img src="{{ assets_url }}/img/teneriffa.jpg" alt="Schiff im Hafen von Teneriffa">
+  			</figure>
+        -->
+      </article>
+      {% for page in pages(current_page.id, depth=null)|sort_by("time")|reverse if not page.hidden %}
+        <article class="foodblogpost">
+            <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+            <p class="date">{{ page.date_formatted }}</p>
+            <p class="excerpt">{{ page.description }}</p>
+        </article>
+      {% endfor %}
+		</section>
+	</main>
+	<footer>
+		<a href="https://www.facebook.com/ppackmor">
+      <figure>
+        <img class="pagelogo" src="{{ assets_url }}/img/f_logo_RGB-Grey_58.png" alt="Facebook Logo">
+      </figure>
+    </a>
+	</footer>
+  </body>
+</html>
