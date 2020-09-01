@@ -8,7 +8,7 @@ Template: index
 
 ## Impressum
 Paul Packmor  
-Im Wei&szlig;en Sand 8d  
-21220 Seevetal
+<Straße> <Hausnummer>  
+<PLZ> <Ort>
 
 admin (at) packmor (dot) org
