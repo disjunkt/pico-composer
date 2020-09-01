@@ -8,7 +8,7 @@ Template: index
 
 ## Impressum
 Paul Packmor  
-<Straße> <Hausnummer>  
-<PLZ> <Ort>
+(Straße) (Hausnummer)  
+(PLZ) (Ort)
 
 admin (at) packmor (dot) org
